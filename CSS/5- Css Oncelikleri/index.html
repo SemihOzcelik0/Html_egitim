@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Öncelikleri</title>
+    <style>
+      h1 {
+        color: aquamarine;
+      }
+
+      .subtitles {
+        color: blue;
+      }
+
+      #page-title {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!--Inline css > id > class > etiket > browser default-->
+      <section>
+        <h1 id="page-title" class="subtitles f20" style="color: springgreen">
+          Welcome To Movieapp
+        </h1>
+      </section>
+    </main>
+  </body>
+</html>

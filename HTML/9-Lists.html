@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Lists</title>
+  </head>
+  <body>
+    <h2>Üç Tipte Liste Vardır</h2>
+    <h4>1- Unordered List (ul) :</h4>
+
+    <ul style="list-style-type: circle"> <!--Css kullanarak çeşitli şekiller veya sayılar verilebilir-->
+      <li>Eleman 1</li>
+      <li>Eleman 2</li>
+      <li>Eleman 3
+            <ul>
+                <li>Eleman 3.1</li>
+                <li>Eleman 3.2</li> <!--Liste elemanlarına alt liste oluşturmak mümkündür-->
+                <li>Eleman 3.3</li>
+            </ul>
+      </li>
+    </ul>
+
+    <h4>2- Ordered List (ol) :</h4>
+
+    <ol start="10"> <!--Start fonksiyonu ile kaçtan başlayacağını belirleyebiliriz-->
+      <li>Eleman 1</li>
+      <li>Eleman 2</li>
+      <li>Eleman 3</li>
+    </ol>
+
+    <h4>3- Description List</h4>
+
+    <dl>  <!--Description List-->
+        <dt>Html 5</dt>      <!--Description Type-->
+        <dd>Dersler 5 saat</dd>
+        <dd>Tercihen 7 saat</dd>
+
+        <dt>Css 3</dt>
+        <dd>Dersler 15 saat</dd>
+    </dl>
+  </body>
+</html>

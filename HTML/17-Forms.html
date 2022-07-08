@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+  </head>
+  <body>
+    <form action="kayit.php">
+      <div>
+        <label for="name">Adınız </label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="surname">Soyad </label>
+        <input type="text" id="surname" name="surname" />
+      </div>
+
+      <div>
+        <label for="eposta">E-mail</label>
+        <input type="email" id="eposta" />
+      </div>
+
+      <div>
+        <label for="sifre">Şifre</label>
+        <input type="password" id="sifre" />
+      </div>
+
+      <div>
+        <label for="birthday">Doğum Tarihi</label>
+        <input type="date" id="birthday" />
+      </div>
+
+      <div>
+        <label for="intro">Kendinizi Tanıtınız</label><br />
+        <textarea
+          id="intro"
+          cols="30"
+          rows="4"
+          placeholder="Özgeçmiş vs."
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="cities">Şehir</label>
+        <select id="cities">
+          <option value="1">Adana</option>
+          <option value="2">Adıyaman</option>
+          <option value="3">Afyon</option>
+          <option value="4">Ağrı</option>
+          <option value="5">Amasya</option>
+          <option value="6">Ankara</option>
+          <option value="7">Antalya</option>
+          <option value="8">Artvin</option>
+          <option value="9">Aydın</option>
+          <option value="10">Balıkesir</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="photo">Resminiz</label>
+        <input type="file" id="photo" />
+      </div>
+
+      <div>
+        <p>En sevdiğiniz programlama dili</p>
+
+        <input type="radio" id="html" name="programming" />
+        <label for="html">Html</label>
+
+        <input type="radio" id="css" name="programming" />
+        <label for="css">Css</label>
+
+        <input type="radio" id="js" name="programming" />
+        <label for="js">Javascript</label>
+      </div>
+
+      <div>
+        <p>En sevdiğiniz programlama dili</p>
+
+        <input type="checkbox" id="html2" name="programlama" />
+        <label for="html2">Html</label>
+
+        <input type="checkbox" id="css2" name="programlama" />
+        <label for="css2">Css</label>
+
+        <input type="checkbox" id="js2" name="programlama" />
+        <label for="js2">Javascript</label>
+      </div>
+
+      <button type="submit">Kaydet</button>
+      <button type="reset">Sıfırla</button>
+    </form>
+  </body>
+</html>
