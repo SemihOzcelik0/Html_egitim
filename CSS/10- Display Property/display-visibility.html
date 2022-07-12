@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      .box {
+        height: 120px;
+        width: 120px;
+        text-align: center;
+        font-size: 35px;
+        display: inline-block;
+        color: #fff;
+      }
+      #first {
+        background-color: #eb1d36;
+        color: #f5eddc;
+      }
+      #second {
+        background-color: #d9f8c4;
+        color: #f37878;
+        visibility: hidden;
+      }
+      #third {
+        background-color: #495c83;
+        color: #ffffff;
+        display: none;
+      }
+      #fourth {
+        background-color: #f0ebe3;
+        color: #7d9d9c;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Display none özelliği kullanılan etiket tamamen sayfadan kaldırılır ve oluşan boşluk diğer elemanlar tarafından doldurulur -->
+    <!-- visibility hidden özelliği kullanılan etiketlerde ise sadece eleman görünmez olur sayfada alan kaplamaya devam eder. -->
+    <div class="container">
+      <div class="box" id="first">first</div>
+      <div class="box" id="second">second</div>
+      <div class="box" id="third">third</div>
+      <div class="box" id="fourth">fourth</div>
+    </div>
+  </body>
+</html>
