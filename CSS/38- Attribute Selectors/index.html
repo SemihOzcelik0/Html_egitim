@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #145677;
+            color: #fff;
+        }
+
+        body a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Attribute Selector */
+        /* Özelliğe sahip olan elemanları seçer köşeli parantez ile kullanılır */
+
+        a[target] {
+            background-color: burlywood;
+        }
+
+        /* Attribute Value Selector */
+        /* Seçilen özelliğin belirli değerine sahip elemanları seçer */
+
+        a[class="value"] {
+            background-color: burlywood;
+        }
+
+        /* '*' Selector */
+        /* Seçilen özelliğin içinde belirtilen değeri tek veya birleşik içeren elemanları seçer  */
+
+        a[class*="yildiz"] {
+            background-color: burlywood;
+        }
+
+        /* '~' Tilda Selector */
+        /* Seçilen özelliğin içinde belirtilen değeri bütün ve tek bir şekilde içeren elemanları seçer  */
+
+        a[class~="tilda"] {
+            background-color: burlywood;
+        }
+
+        /* '|' Pipe Selector */
+        /* 
+            Seçilen özelliğin içinde belirtilen değeri tek eleman olacak şekilde ve başta olmak şartıyla içeren değerleri seçer
+            Verilen değerle başlamak şartıyla birleşik değerler yazılabilir ancak boşluk bırakılamaz ve 1'den fazla eleman içeremez 
+        */
+
+        a[class|="pipe"] {
+            background-color: burlywood;
+        }
+
+        /* '^' Caret Selector */
+        /* 
+            Pipe selector gibi yine başta olmak şartıyla aynı koşullarda seçim yapar ancak pipe tek eleman olma şartı sunarken caret
+            birden fazla eleman ve boşluk kabul eder başta olması yeterlidir.
+        */
+
+        a[class^="caret"] {
+            background-color: burlywood;
+        }
+
+        /* '$' Dollar Selector */
+        /* Pipe ile birebir aynıdır tek farkı pipe başta özelliği ararken dolar sonda arar  */
+
+        a[class$="dollar"] {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Attribute Selector -->
+    <h2>Attribute Selector</h2>
+
+    <a href="#" target="_blank">Ana Sayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+
+    <span class="value">Giriş Yap</span>
+
+    <!-- Attribute Value Selector -->
+    <h2>Attribute Value Selector</h2>
+
+    <a href="#">Ana Sayfa</a>
+    <a href="#" class="value">Hakkımızda</a>
+    <a href="#">İletişim</a>
+
+    <span class="value">Giriş Yap</span>
+
+    <!-- '*' Selector -->
+    <h2>' * ' Selector</h2>
+
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#" class="yildizlarin-altinda">İletişim</a>
+
+    <span class="value">Giriş Yap</span>
+
+    <!-- '~' Selector -->
+    <h2>' ~ ' Selector</h2>
+
+    <a href="#">Ana Sayfa</a>
+    <a href="#" class="tilda">Hakkımızda</a>
+    <a href="#" class="tilda-isareti">İletişim</a>
+
+    <span class="value">Giriş Yap</span>
+
+    <!-- '|' Selector -->
+    <h2>' | ' Pipe Selector</h2>
+
+    <a href="#" class="pipe">Ana Sayfa</a>
+    <a href="#" class="pipe-isareti">Hakkımızda</a>
+    <a href="#" class="pipe isareti">İletişim</a>
+    <a href="#" class="isaret-pipe">Giriş Yap</a>
+
+    <!-- '^' Selector -->
+    <h2>' ^ ' Caret Selector</h2>
+
+    <a href="#" class="caret">Ana Sayfa</a>
+    <a href="#" class="caret-isareti">Hakkımızda</a>
+    <a href="#" class="caret isareti">İletişim</a>
+    <a href="#" class="isaret-caret">Giriş Yap</a>
+
+    <!-- '$' Selector -->
+    <h2>' $ ' Caret Selector</h2>
+
+    <a href="#" class="dollar">Ana Sayfa</a>
+    <a href="#" class="dollar-isareti">Hakkımızda</a>
+    <a href="#" class="isaret dolar">İletişim</a>
+    <a href="#" class="isaret-dollar">Giriş Yap</a>
+</body>
+
+</html>

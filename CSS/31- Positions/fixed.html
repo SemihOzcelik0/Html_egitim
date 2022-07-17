@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Positions</title>
+    <style>
+        html {
+            height: 2000px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .box {
+            padding: 15px;
+            border: 4px solid #6d5b95;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #fff;
+
+        }
+
+        .navbar {
+            background-color: #feb336;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .content {
+            background-color: #d64161;
+            margin-top: 70px;
+
+        }
+
+        .footer {
+            background-color: #ff7b25;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box navbar">Navbar</div>
+        <div class="box content">Content</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+
+</html>

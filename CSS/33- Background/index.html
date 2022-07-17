@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #header {
+            position: relative;
+            background-color: red;
+            height: 100vh;
+            /* "vh = viewport height " Sayfanın görüntülendiği cihazdaki tarayıcının siteyi gösterdiği alanın yüksekliği kadar.*/
+            /* "vw = viewport width" Sayfanın görüntülendiği cihazdaki tarayıcının siteyi gösterdiği alanın genişliği kadar. */
+            background-image: url("bg.jpg");
+
+        }
+
+        #header h1 {
+            font-size: 80px;
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Background Text</h1>
+    </div>
+</body>
+
+</html>

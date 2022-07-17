@@ -1,0 +1,37 @@
+.signup-page {
+  margin-top: 70px;
+}
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #2e4c6d;
+}
+
+.signup-form {
+  width: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signup-form label,
+input:not([type="checkbox"]),
+select {
+  display: block;
+  width: 100%;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+  display: inline-block;
+  width: auto;
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 15px;
+}
+
+footer {
+  bottom: -367px;
+}

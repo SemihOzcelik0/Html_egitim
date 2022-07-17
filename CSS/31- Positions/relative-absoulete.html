@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* Container 1 Position: relative */
+
+        /* Relative positionda eleman bulunduğu noktadan itibaren pozisyon almaya başlar. */
+
+        .container1 {
+            border: 2px solid blue;
+            color: #fff;
+        }
+
+        .boxes {
+            padding: 15px;
+            margin: 10px;
+            width: 50px;
+        }
+
+        .box1_1 {
+            background-color: rgb(0, 110, 255);
+        }
+
+        .box1_2 {
+            background-color: orange;
+            position: relative;
+            left: 100px;
+            bottom: 30px;
+        }
+
+        .box1_3 {
+            background-color: gray;
+        }
+
+        /* ******************************************** */
+
+        /* Container 1 Position: absoulete */
+
+        /* Absoulete positionda eleman kendine en yakın "position: relative;" olan kapsayıcı elemana yaslanır ve ordan pozisyon alır. */
+
+        .container2 {
+            margin-top: 50px;
+            border: 2px solid blue;
+            color: #fff;
+            /*  */
+            position: relative;
+        }
+
+        .box2_1 {
+            background-color: rgb(0, 110, 255);
+        }
+
+        .box2_2 {
+            background-color: orange;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        .box2_3 {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="boxes box1_1">div1</div>
+        <div class="boxes box1_2">div2</div>
+        <div class="boxes box1_3">div3</div>
+    </div>
+
+    <div class="container2">
+        <div class="boxes box2_1">div1</div>
+        <div class="boxes box2_2">div2</div>
+        <div class="boxes box2_3">div3</div>
+    </div>
+</body>
+
+</html>
