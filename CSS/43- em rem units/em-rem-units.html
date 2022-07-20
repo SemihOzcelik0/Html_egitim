@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            /* Font size'ı yüzdeli bir şekilde yazmak tarayıcı ayarlarından font boyutları değiştirilirse metinlerin ona göre boyutlanmasını sağlar
+             doğrudan px şeklinde değer verilirse bu değer değiştirilemez %62.5 10px' e denk gelir. */
+            /* font-size: 10px; */
+        }
+
+        @media only screen and (min-width: 576px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            #kutu-1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            html {
+                font-size: 16px;
+            }
+
+            #kutu-1 {
+                font-size: 1.5rem;
+            }
+
+            #kutu-2 {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        @media only screen and (min-width: 1200px) {
+            html {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kutu-1">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti deserunt voluptatem nulla quam nisi
+            rem totam, sit omnis, neque laboriosam voluptatibus officia voluptate, enim dolor aperiam dignissimos
+            debitis excepturi.
+        </p>
+    </div>
+
+    <div id="kutu-2">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque non saepe sit quam vero nihil deserunt iste
+            dicta? Ipsa, natus laboriosam nobis maiores atque aperiam harum aliquam veritatis necessitatibus quisquam!
+        </p>
+    </div>
+</body>
+
+</html>

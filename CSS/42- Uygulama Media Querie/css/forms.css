@@ -1,0 +1,75 @@
+.signup-page {
+  padding-top: 20px;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #2e4c6d;
+}
+
+.signup-form {
+  width: 500px;
+  margin: auto;
+}
+
+.signup-form label,
+input:not([type="checkbox"]),
+select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label {
+  display: inline-block;
+  width: auto;
+}
+
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 15px;
+}
+
+.signup-form input:not([type="checkbox"]),
+select {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: border-color 0.2s;
+}
+
+.signup-form input:not([type="checkbox"]):hover,
+select:hover {
+  border: 1px solid #2e4c6d;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+select:focus {
+  background-color: aliceblue;
+}
+
+.signup-form input[type="checkbox"] {
+  appearance: none;
+  border-radius: 20%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #2e4c6d;
+  background-color: aliceblue;
+  position: relative;
+  top: 6px;
+  transition: background-color 0.1s;
+}
+
+.signup-form input[type="checkbox"]:hover {
+  border: 1px solid #25415f;
+  background-color: rgba(230, 239, 247, 0.822);
+}
+
+.signup-form input[type="checkbox"]:checked {
+  border: 1px solid #fc997c;
+  background-color: #232a9188;
+}
+footer {
+  bottom: -163px;
+}
